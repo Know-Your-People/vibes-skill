@@ -223,6 +223,15 @@ When someone in your circle asks for recommendations:
 
 ---
 
+## Integration with Digs
+
+If Digs is installed, cultural content and research threads can be connected:
+
+- When a podcast, documentary, or show touches an active dig's topic, surface it: "That Adam Curtis doc might be relevant to your *why propaganda works* dig."
+- When logging a finding in a dig from something you watched or listened to, reference the vibe file in Sources.
+
+---
+
 ## Updating
 
 To update this skill to the latest version, fetch the new SKILL.md from GitHub and replace this file:
