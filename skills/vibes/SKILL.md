@@ -1,4 +1,5 @@
 ---
+
 name: vibes
 description: Cultural intelligence — track albums, podcasts, shows, films, and YouTube channels that shaped how you think. One markdown file per item in vibes/. Use when logging new culture, finding past favorites, or asking "what have I watched/listened to about X?"
 metadata:
@@ -6,7 +7,8 @@ metadata:
     emoji: "🎧"
     os: ["linux", "darwin", "win32"]
   hermes:
-    tags: ["culture", "music", "podcasts", "shows", "films", "youtube"]
+tags: ["culture", "music", "podcasts", "shows", "films", "youtube"]
+
 ---
 
 # 🎧 Vibes — cultural intelligence
@@ -94,10 +96,10 @@ File names: lowercase slugs. `radiohead-ok-computer.md`, `lex-fridman-podcast.md
 1. Check if already saved.
 2. Pre-fill what you know (type, creator, year or channel URL for YouTube).
 3. **Ask as a group** (skip what's already clear):
-   - Status — finished/following/watching, or want?
-   - If finished: rating?
-   - Tags — what's this about, in your words?
-   - Any notes or must-watch videos worth capturing now?
+  - Status — finished/following/watching, or want?
+  - If finished: rating?
+  - Tags — what's this about, in your words?
+  - Any notes or must-watch videos worth capturing now?
 
 Show a brief confirmation: "Saved — *Succession*, show by Jesse Armstrong (2018–2023), finished. Tagged #drama #power #darkcomedy." Or: "Saved — 3Blue1Brown in youtube/, following. Tagged #math #animation #explainers."
 
@@ -113,6 +115,7 @@ Show a brief confirmation: "Saved — *Succession*, show by Jesse Armstrong (201
 - User shares a specific video worth saving → add to the creator's Must Watch list (create the channel file if needed)
 
 **Examples:**
+
 - "Just finished watching Succession" → check if saved, offer to rate and note
 - "I'm thinking about power dynamics in companies" → "You rated *Succession* 5/5 and tagged it #power — your note says it's the sharpest thing you've seen on how institutions corrupt"
 - "Marco and I were both talking about the same Lex Fridman episode" → update `Shared with:` on that podcast file; if Peeps is installed, offer to note it on Marco's Peeps file
@@ -151,6 +154,7 @@ ls vibes/films/
 ```
 
 **Keyword expansion examples:**
+
 - "sad / melancholy" → `sad\|melancholy\|grief\|slow\|introspective\|quiet`
 - "upbeat / energetic" → `upbeat\|energetic\|hype\|dance\|workout\|intense`
 - "smart / cerebral" → `cerebral\|dense\|intellectual\|complex\|layered`
@@ -200,6 +204,7 @@ If Peeps is installed, culture and people can be connected:
 - Surface shared tastes when relevant: "You and Marco both rate Radiohead highly — you've never talked about it."
 
 When meeting someone new:
+
 - Note their recommendations in want/, using `Recommended by: [[their-slug]]` if Peeps is installed, otherwise their name as plain text
 - Over time, their recommendations form a taste profile you can reference
 
@@ -208,11 +213,23 @@ When meeting someone new:
 ## Integration with Haah
 
 If Haah is installed, dispatch to your circles when you want recommendations in a mood or genre:
+
 - "Haah: anyone in my circles have a podcast recommendation for long walks?"
 
 When someone in your circle asks for recommendations:
+
 - Check Vibes for highly-rated relevant items before answering
 - Draft a reply with your actual experience, rating, and one honest sentence about it. Don't recommend things you haven't tried.
+
+---
+
+## Updating
+
+To update this skill to the latest version, fetch the new SKILL.md from GitHub and replace this file:
+
+```
+https://raw.githubusercontent.com/Know-Your-People/vibes-skill/main/SKILL.md
+```
 
 ---
 
@@ -223,3 +240,4 @@ When someone in your circle asks for recommendations:
 - Logging every episode or every song — this is for the things worth remembering
 - Star ratings for things you haven't finished — rate on completion
 - Genre taxonomies from Discogs or TMDB — use personal tags that mean something to you
+
