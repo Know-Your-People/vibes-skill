@@ -82,7 +82,7 @@ File names: lowercase slugs. `radiohead-ok-computer.md`, `lex-fridman-podcast.md
 - **Creator** — for albums: artist name. For podcasts: host name. For shows/films: showrunner or director. For YouTube: person or team name.
 - **Status** — what's your current relationship with it? Ongoing podcasts and YouTube channels: `listening` / `following`. Mid-series shows: `watching`. Done: `finished`.
 - **Tags** — personal tags, not genre labels. `#slow` means slow-paced. `#founders` means it's about founders. Tags that mean something to *you* are more useful than accurate genre taxonomy.
-- **Shared with** — if you discovered it with someone, or recommended it to each other, link their Peeps slug. Builds taste connections.
+- **Shared with** — if Peeps is installed, use `[[their-slug]]`; otherwise note the person's name as plain text. Builds taste connections when Peeps is present.
 - **Notes** — what made it worth logging. Not a review. What shifted, what surprised, what you'd bring up in a conversation.
 
 **A vibe is worth logging if** you'd mention it to someone, if it changed how you think, or if you'd want to find it again. Not everything needs to be here.
@@ -115,7 +115,7 @@ Show a brief confirmation: "Saved — *Succession*, show by Jesse Armstrong (201
 **Examples:**
 - "Just finished watching Succession" → check if saved, offer to rate and note
 - "I'm thinking about power dynamics in companies" → "You rated *Succession* 5/5 and tagged it #power — your note says it's the sharpest thing you've seen on how institutions corrupt"
-- "Marco and I were both talking about the same Lex Fridman episode" → update `Shared with:` on that podcast file and offer to note it on Marco's Peeps file
+- "Marco and I were both talking about the same Lex Fridman episode" → update `Shared with:` on that podcast file; if Peeps is installed, offer to note it on Marco's Peeps file
 - "I've been watching a lot of 3Blue1Brown lately" → check youtube/, offer to save with tags and a must-watch note
 
 ---
@@ -193,22 +193,22 @@ If it is not there yet, ask your human if they want to add **Vibes: check** to H
 
 ## Integration with Peeps
 
-Culture creates connection. When you share something with someone:
+If Peeps is installed, culture and people can be connected:
 
 - Add `Shared with: [[their-slug]]` to the vibe file
 - Optionally note in their Peeps file: "Both love *Show / Artist* — good conversation territory"
 - Surface shared tastes when relevant: "You and Marco both rate Radiohead highly — you've never talked about it."
 
 When meeting someone new:
-- Note their recommendations in want/, linking `Recommended by:` to their Peeps slug
+- Note their recommendations in want/, using `Recommended by: [[their-slug]]` if Peeps is installed, otherwise their name as plain text
 - Over time, their recommendations form a taste profile you can reference
 
 ---
 
 ## Integration with Haah
 
-When looking for recommendations in a mood or genre:
-- Dispatch: "Haah: anyone in my circles have a podcast recommendation for long walks?"
+If Haah is installed, dispatch to your circles when you want recommendations in a mood or genre:
+- "Haah: anyone in my circles have a podcast recommendation for long walks?"
 
 When someone in your circle asks for recommendations:
 - Check Vibes for highly-rated relevant items before answering
