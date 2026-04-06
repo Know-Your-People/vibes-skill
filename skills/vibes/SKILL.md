@@ -15,12 +15,12 @@ tags: ["culture", "music", "podcasts", "shows", "films", "youtube"]
 
 ## Data
 
-**Base path:** `~/` is workspace root or document root folder. On first use, create it: `mkdir -p ~/kyp/vibes/` or `mkdir -p ./kyp/vibes/`. Vibes uses a `~/kyp/vibes/` folder in your workspace.
+**Base path** is workspace root or document root folder. On first use, create it: `mkdir -p kyp/vibes/`. Vibes uses a `kyp/vibes/` folder in your workspace.
 
-Files live in `~/kyp/vibes/`. Organised by type:
+Files live in `kyp/vibes/`. Organised by type:
 
 ```
-~/kyp/
+./kyp/
 └── vibes/
     ├── albums/        ← music albums, EPs, mixtapes
     ├── podcasts/      ← ongoing shows and limited series podcasts
@@ -30,6 +30,14 @@ Files live in `~/kyp/vibes/`. Organised by type:
 ```
 
 File names: lowercase slugs. `radiohead-ok-computer.md`, `lex-fridman-podcast.md`, `succession.md`, `parasite.md`, `3blue1brown.md`.
+
+### Dataset Config
+
+`vibesconfig.yml` lives inside the `kyp/peeps/` directory. Read it at the start of any session involving this skill.
+
+```yaml
+images: no (by default no, ask if you human want to feach images for pepople, warn that it is token expensive)
+```
 
 ---
 
@@ -46,6 +54,7 @@ File names: lowercase slugs. `radiohead-ok-computer.md`, `lex-fridman-podcast.md
 - **Status:** listening / watching / finished / paused / want
 - **Finished:** 14 Jan 2026 (omit if ongoing or unfinished)
 - **Rating:** 4/5 (omit until finished)
+- **Image:** optional image located at `kyp/assets/slug-for-image`
 - **Tags:** #jazz #introspective #slow #90s #documentary #tech #comedy
 - **Shared with:** [[marco-tabini]] (Peeps slug — omit if unknown)
 
@@ -103,15 +112,16 @@ File names: lowercase slugs. `radiohead-ok-computer.md`, `lex-fridman-podcast.md
   - If finished: rating?
   - Tags — what's this about, in your words?
   - Any notes or must-watch videos worth capturing now?
+4. If `images: yes` in `kyp/vibes/vibesconfig.yml` search for the conver image and add it to **Image** field. 
 
-Show a brief confirmation: "Saved — *Succession*, show by Jesse Armstrong (2018–2023), finished. Tagged #drama #power #darkcomedy." Or: "Saved — 3Blue1Brown in `~/kyp/vibes/youtube/`, following. Tagged #math #animation #explainers."
+Show a brief confirmation: "Saved — *Succession*, show by Jesse Armstrong (2018–2023), finished. Tagged #drama #power #darkcomedy." Or: "Saved — 3Blue1Brown in `./kyp/vibes/youtube/`, following. Tagged #math #animation #explainers."
 
 ---
 
 ## Core Behavior
 
 - User mentions a show/album/podcast/film/YouTube channel → check if saved, offer to create or update
-- User asks "what have I watched/listened to about X?" → search `~/kyp/vibes/` with expanded keywords
+- User asks "what have I watched/listened to about X?" → search `./kyp/vibes/` with expanded keywords
 - User finishes something or stops following a channel → ask for a rating and a note
 - Conversation touches a theme → surface relevant vibes without being asked
 - User mentions someone having similar taste → note `Shared with:` and link to Peeps if installed
@@ -122,38 +132,38 @@ Show a brief confirmation: "Saved — *Succession*, show by Jesse Armstrong (201
 - "Just finished watching Succession" → check if saved, offer to rate and note
 - "I'm thinking about power dynamics in companies" → "You rated *Succession* 5/5 and tagged it #power — your note says it's the sharpest thing you've seen on how institutions corrupt"
 - "Marco and I were both talking about the same Lex Fridman episode" → update `Shared with:` on that podcast file; if Peeps is installed, offer to note it on Marco's Peeps file
-- "I've been watching a lot of 3Blue1Brown lately" → check `~/kyp/vibes/youtube/`, offer to save with tags and a must-watch note
+- "I've been watching a lot of 3Blue1Brown lately" → check `./kyp/vibes/youtube/`, offer to save with tags and a must-watch note
 
 ---
 
 ## Finding Vibes
 
-Use `grep` with expanded terms. Search type folders or all of `~/kyp/vibes/`.
+Use `grep` with expanded terms. Search type folders or all of `./kyp/vibes/`.
 
 ```bash
 # All jazz and soul albums
-grep -ril "jazz\|blues\|soul\|r.b\|motown" ~/kyp/vibes/albums/
+grep -ril "jazz\|blues\|soul\|r.b\|motown" ./kyp/vibes/albums/
 
 # Finished shows with high rating
-grep -rl "Rating: 5\|Rating: 4" ~/kyp/vibes/shows/
+grep -rl "Rating: 5\|Rating: 4" ./kyp/vibes/shows/
 
 # Podcasts about tech and startups
-grep -ril "tech\|ai\|startup\|founders\|venture" ~/kyp/vibes/podcasts/
+grep -ril "tech\|ai\|startup\|founders\|venture" ./kyp/vibes/podcasts/
 
 # YouTube channels you follow
-grep -rl "Status:.*following" ~/kyp/vibes/youtube/
+grep -rl "Status:.*following" ./kyp/vibes/youtube/
 
 # YouTube channels with must-watch videos
-grep -rl "## Must Watch" ~/kyp/vibes/youtube/
+grep -rl "## Must Watch" ./kyp/vibes/youtube/
 
 # Vibes shared with specific person
-grep -rl "\[\[marco" ~/kyp/vibes/
+grep -rl "\[\[marco" ./kyp/vibes/
 
 # Want list across all types
-grep -rl "Status:.*want" ~/kyp/vibes/
+grep -rl "Status:.*want" ./kyp/vibes/
 
 # All films you've logged
-ls ~/kyp/vibes/films/
+ls ./kyp/vibes/films/
 ```
 
 **Keyword expansion examples:**
@@ -186,7 +196,7 @@ Check a random vibe file. Surface something worth mentioning:
 - "You started *Severance* in January — still watching, or did it lose you?"
 - "You haven't logged any new albums this month — anything good lately?"
 - "You and Priya both tagged #succession — do you know you share that?"
-- "3Blue1Brown is in your `~/kyp/vibes/youtube/` folder but has no Must Watch list — anything from there worth saving?"
+- "3Blue1Brown is in your `./kyp/vibes/youtube/` folder but has no Must Watch list — anything from there worth saving?"
 
 If nothing worth mentioning, skip.
 
@@ -208,7 +218,7 @@ If Peeps is installed, culture and people can be connected:
 
 When meeting someone new:
 
-- Note their recommendations in `~/kyp/vibes/`, using `Recommended by: [[their-slug]]` if Peeps is installed, otherwise their name as plain text
+- Note their recommendations in `./kyp/vibes/`, using `Recommended by: [[their-slug]]` if Peeps is installed, otherwise their name as plain text
 - Over time, their recommendations form a taste profile you can reference
 
 ---
