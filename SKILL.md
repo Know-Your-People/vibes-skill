@@ -86,18 +86,18 @@ Shared with: [[person-slug]] (omit if unknown)
 
 **Field guidance — YouTube:**
 
-- **Status** — `following`: actively watching new uploads. `archived`: used to follow, no longer active, but shaped how you think. `want`: want to check out.
-- **Must Watch** — the specific videos worth recommending. Keep it short. If every video is on this list, the list means nothing.
-- **Channel** — the channel URL, not a specific video. For one-off videos that don't belong to a channel you follow, log them under the most relevant channel or create a minimal file just for that creator.
+Status: `following`: actively watching new uploads. `archived`: used to follow, no longer active, but shaped how you think. `want`: want to check out.
+Must Watch: the specific videos worth recommending. Keep it short. If every video is on this list, the list means nothing.
+Channel: the channel URL, not a specific video. For one-off videos that don't belong to a channel you follow, log them under the most relevant channel or create a minimal file just for that creator.
 
 **Field guidance — all types:**
 
-- **Type** — pick one. When in doubt, go with how you primarily consume it.
-- **Creator** — for albums: artist name. For podcasts: host name. For shows/films: showrunner or director. For YouTube: person or team name.
-- **Status** — what's your current relationship with it? Ongoing podcasts and YouTube channels: `listening` / `following`. Mid-series shows: `watching`. Done: `finished`.
-- **Tags** — personal tags, not genre labels. `#slow` means slow-paced. `#founders` means it's about founders. Tags that mean something to *you* are more useful than accurate genre taxonomy.
-- **Shared with** — if Peeps is installed, use `[[their-slug]]`; otherwise note the person's name as plain text. Builds taste connections when Peeps is present.
-- **Notes** — what made it worth logging. Not a review. What shifted, what surprised, what you'd bring up in a conversation.
+Type: pick one. When in doubt, go with how you primarily consume it.
+Creator: for albums: artist name. For podcasts: host name. For shows/films: showrunner or director. For YouTube: person or team name.
+Status: what's your current relationship with it? Ongoing podcasts and YouTube channels: `listening` / `following`. Mid-series shows: `watching`. Done: `finished`.
+Tags: personal tags, not genre labels. `#slow` means slow-paced. `#founders` means it's about founders. Tags that mean something to *you* are more useful than accurate genre taxonomy.
+Shared with: if Peeps is installed, use `[[their-slug]]`; otherwise note the person's name as plain text. Builds taste connections when Peeps is present.
+Notes: what made it worth logging. Not a review. What shifted, what surprised, what you'd bring up in a conversation.
 
 **A vibe is worth logging if** you'd mention it to someone, if it changed how you think, or if you'd want to find it again. Not everything needs to be here.
 
