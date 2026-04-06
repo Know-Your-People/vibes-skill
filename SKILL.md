@@ -48,15 +48,15 @@ images: no (by default no, ask if you human want to feach images for pepople, wa
 ```markdown
 # Title
 
-- **Type:** album / podcast / show / film
-- **Creator:** artist, host, director, or studio
-- **Year:** 2024
-- **Status:** listening / watching / finished / paused / want
-- **Finished:** 14 Jan 2026 (omit if ongoing or unfinished)
-- **Rating:** 4/5 (omit until finished)
-- **Image:** optional image located at `../assets/slug-for-image`
-- **Tags:** #jazz #introspective #slow #90s #documentary #tech #comedy
-- **Shared with:** [[marco-tabini]] (Peeps slug — omit if unknown)
+Type: album / podcast / show / film
+Creator: artist, host, director, or studio
+Year: 2024
+Status: listening / watching / finished / paused / want
+Finished: 14 Jan 2026 (omit if ongoing or unfinished)
+Rating: 4/5 (omit until finished)
+Image: optional image located at `../assets/slug-for-image`
+Tags: #jazz #introspective #slow #90s #documentary #tech #comedy
+Shared with: [[marco-tabini]] (Peeps slug — omit if unknown)
 
 ## Notes
 
@@ -68,12 +68,12 @@ images: no (by default no, ask if you human want to feach images for pepople, wa
 ```markdown
 # Channel Name
 
-- **Type:** youtube
-- **Creator:** person or team behind it
-- **Channel:** https://youtube.com/@channelslug
-- **Status:** following / archived / want
-- **Tags:** #math #animation #explainers #tech #essays
-- **Shared with:** [[person-slug]] (omit if unknown)
+Type: youtube
+Creator: person or team behind it
+Channel: https://youtube.com/@channelslug
+Status: following / archived / want
+Tags: #math #animation #explainers #tech #essays
+Shared with: [[person-slug]] (omit if unknown)
 
 ## Notes
 
