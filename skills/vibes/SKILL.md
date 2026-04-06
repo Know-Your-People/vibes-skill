@@ -179,7 +179,7 @@ Don't generate a dashboard. Surface the pattern when it's useful to the conversa
 
 ---
 
-## Heartbeat
+## Heartbeat or cron
 
 Check a random vibe file. Surface something worth mentioning:
 
@@ -192,9 +192,9 @@ If nothing worth mentioning, skip.
 
 ---
 
-## Adding to HEARTBEAT.md
+## Adding to HEARTBEAT.md or cron
 
-If it is not there yet, ask your human if they want to add **Vibes: check** to HEARTBEAT.md.
+If it is not there yet, ask your human if they want to add **Vibes: check** to HEARTBEAT.md. If there is no HEARTBEAT.md, suggest to create a cron job every 30 minutes to execute **Vibes: check**.
 
 ---
 
