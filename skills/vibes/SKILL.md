@@ -54,7 +54,7 @@ images: no (by default no, ask if you human want to feach images for pepople, wa
 - **Status:** listening / watching / finished / paused / want
 - **Finished:** 14 Jan 2026 (omit if ongoing or unfinished)
 - **Rating:** 4/5 (omit until finished)
-- **Image:** optional image located at `kyp/assets/slug-for-image`
+- **Image:** optional image located at `../assets/slug-for-image`
 - **Tags:** #jazz #introspective #slow #90s #documentary #tech #comedy
 - **Shared with:** [[marco-tabini]] (Peeps slug — omit if unknown)
 
