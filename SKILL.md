@@ -51,9 +51,9 @@ images: no (by default no, ask if you human want to feach images for pepople, wa
 Type: album / podcast / show / film
 Creator: artist, host, director, or studio
 Year: 2024
-Status: listening / watching / finished / paused / want
-Finished: 14 Jan 2026 (omit if ongoing or unfinished)
-Rating: 4/5 (omit until finished)
+Status: listening / watching / finished / paused / want (see per-type guidance below)
+Finished: 14 Jan 2026 (omit for albums; omit if ongoing or unfinished)
+Rating: 4/5 (omit until finished; for albums, rate anytime)
 Image: optional image located at `../assets/slug-for-image`
 Tags: #jazz #introspective #slow #90s #documentary #tech #comedy
 Shared with: [[marco-tabini]] (Peeps slug — omit if unknown)
@@ -94,7 +94,12 @@ Channel: the channel URL, not a specific video. For one-off videos that don't be
 
 Type: pick one. When in doubt, go with how you primarily consume it.
 Creator: for albums: artist name. For podcasts: host name. For shows/films: showrunner or director. For YouTube: person or team name.
-Status: what's your current relationship with it? Ongoing podcasts and YouTube channels: `listening` / `following`. Mid-series shows: `watching`. Done: `finished`.
+Status: what's your current relationship with it?
+- **Albums**: `listening` (in rotation) / `shelved` (heard it, not active right now) / `want` (want to check out). Music is continuous — you don't "finish" an album, you shelve it or keep listening.
+- **Podcasts**: `listening` / `shelved` / `want`. Same as albums — ongoing by nature.
+- **Shows**: `watching` / `finished` / `paused` / `want`.
+- **Films**: `watching` / `finished` / `want`.
+- **YouTube**: `following` / `archived` / `want`.
 Tags: personal tags, not genre labels. `#slow` means slow-paced. `#founders` means it's about founders. Tags that mean something to *you* are more useful than accurate genre taxonomy.
 Shared with: if Peeps is installed, use `[[their-slug]]`; otherwise note the person's name as plain text. Builds taste connections when Peeps is present.
 Notes: what made it worth logging. Not a review. What shifted, what surprised, what you'd bring up in a conversation.
@@ -108,8 +113,8 @@ Notes: what made it worth logging. Not a review. What shifted, what surprised, w
 1. Check if already saved.
 2. Pre-fill what you know (type, creator, year or channel URL for YouTube).
 3. **Ask as a group** (skip what's already clear):
-  - Status — finished/following/watching, or want?
-  - If finished: rating?
+  - Status — listening/shelved/watching/finished/following, or want? (use type-appropriate options)
+  - Rating? (for albums: anytime; for shows/films: after finishing)
   - Tags — what's this about, in your words?
   - Any notes or must-watch videos worth capturing now?
 4. If `images: yes` in `kyp/vibes/vibesconfig.yml` search for the conver image and add it to **Image** field. 
@@ -122,7 +127,8 @@ Show a brief confirmation: "Saved — *Succession*, show by Jesse Armstrong (201
 
 - User mentions a show/album/podcast/film/YouTube channel → check if saved, offer to create or update
 - User asks "what have I watched/listened to about X?" → search `./kyp/vibes/` with expanded keywords
-- User finishes something or stops following a channel → ask for a rating and a note
+- User finishes a show/film or stops following a channel → ask for a rating and a note
+- User shelves an album or podcast → ask if they want to add a note or rating
 - Conversation touches a theme → surface relevant vibes without being asked
 - User mentions someone having similar taste → note `Shared with:` and link to Peeps if installed
 - User shares a specific video worth saving → add to the creator's Must Watch list (create the channel file if needed)
@@ -251,5 +257,5 @@ https://raw.githubusercontent.com/Know-Your-People/vibes-skill/main/SKILL.md
 - Syncing with Spotify, Netflix, Apple Music, or YouTube — different purpose, these are algorithmic feeds
 - Automated tracking via API integrations — complexity, privacy, not local-first
 - Logging every episode or every song — this is for the things worth remembering
-- Star ratings for things you haven't finished — rate on completion
+- Star ratings for things you haven't finished — rate on completion (albums are the exception: rate anytime)
 - Genre taxonomies from Discogs or TMDB — use personal tags that mean something to you
