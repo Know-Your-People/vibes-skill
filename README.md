@@ -38,13 +38,13 @@ vibes/
 
 ```bash
 mkdir -p ~/.claude/skills/vibes
-curl -o ~/.claude/skills/vibes/SKILL.md https://raw.githubusercontent.com/Know-Your-People/vibes-skill/main/SKILL.md
+curl -o ~/.claude/skills/vibes/SKILL.md https://raw.githubusercontent.com/haah-ing/vibes-skill/main/SKILL.md
 ```
 
 ### Other agents
 
 ```bash
-npx skills add Know-Your-People/vibes-skill
+npx skills add haah-ing/vibes-skill
 ```
 
 Works with OpenClaw, Cursor, and any agent that supports the skills ecosystem.
@@ -94,11 +94,11 @@ YouTube channels get a `Channel:` URL field and a `## Must Watch` section for sp
 
 Vibes is part of a suite of personal intelligence skills:
 
-- [**Haah** 🪩](https://github.com/Know-Your-People/haah-skill) — dispatch to your trusted circles. When you want a recommendation in a mood or genre, Haah asks your network what they've been into.
-- [**Peeps** 👥](https://github.com/Know-Your-People/peeps-skill) — your personal network. When you and a contact share taste, Vibes links it to their Peeps file. Your agent can surface it as a conversation opener or intro point.
-- [**Pages** 📖](https://github.com/Know-Your-People/pages-skill) — books and reading. The cultural sibling to Vibes — some ideas start as a book and finish as a film.
-- [**Nooks** 📍](https://github.com/Know-Your-People/nooks-skill) — your saved places. Some places have a sound; your agent knows both.
-- [**Digs** 🔭](https://github.com/Know-Your-People/digs-skill) — your active research threads. A documentary or podcast can feed directly into an open dig as a finding.
+- [**Haah** 🪩](https://github.com/haah-ing/haah-skill) — dispatch to your trusted circles. When you want a recommendation in a mood or genre, Haah asks your network what they've been into.
+- [**Peeps** 👥](https://github.com/haah-ing/peeps-skill) — your personal network. When you and a contact share taste, Vibes links it to their Peeps file. Your agent can surface it as a conversation opener or intro point.
+- [**Pages** 📖](https://github.com/haah-ing/pages-skill) — books and reading. The cultural sibling to Vibes — some ideas start as a book and finish as a film.
+- [**Nooks** 📍](https://github.com/haah-ing/nooks-skill) — your saved places. Some places have a sound; your agent knows both.
+- [**Digs** 🔭](https://github.com/haah-ing/digs-skill) — your active research threads. A documentary or podcast can feed directly into an open dig as a finding.
 
 Install all six and your agent knows your people, your places, your reads, your culture, and your open questions.
 

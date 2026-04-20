@@ -33,7 +33,7 @@ File names: lowercase slugs. `radiohead-ok-computer.md`, `lex-fridman-podcast.md
 
 ### Dataset Config
 
-`vibesconfig.yml` lives inside the `mind/peeps/` directory. Read it at the start of any session involving this skill.
+`vibesconfig.yml` lives inside the `mind/vibes/` directory. Read it at the start of any session involving this skill.
 
 ```yaml
 images: no (by default no, ask if you human want to feach images for pepople, warn that it is token expensive)
